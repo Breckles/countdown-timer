@@ -7,6 +7,11 @@ export interface DialValues {
   seconds: number;
 }
 
+export enum TimerModes {
+  timer = 'timer',
+  countdown = 'countdown',
+}
+
 @Component({
   selector: 'app-flip-timer',
   templateUrl: './flip-timer.component.html',
@@ -15,8 +20,21 @@ export interface DialValues {
 export class FlipTimerComponent implements OnInit {
   @Input()
   dialValues!: DialValues;
+  @Input()
+  timerMode!: TimerModes;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (!this.dialValues) {
+      this.dialValues = { days: 0, hours: 1, minutes: 0, seconds: 0 };
+    }
+    if (!this.timerMode) {
+      this.timerMode = TimerModes.countdown;
+    }
+
+    if (this.timerMode === TimerModes.countdown) {
+    } else {
+    }
+  }
 }

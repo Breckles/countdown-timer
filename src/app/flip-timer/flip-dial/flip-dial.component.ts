@@ -19,7 +19,11 @@ export class FlipDialComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (!this.dialValue) {
+      this.dialValue = 0;
+    }
+  }
 
   startFlipping() {
     setInterval(() => this.onFlip(), 1000);
