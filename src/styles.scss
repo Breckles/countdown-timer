@@ -7,12 +7,27 @@
 }
 
 html {
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+  --white: hsl(0, 0%, 100%);
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --very-dark-blue: hsl(235, 16%, 14%);
+  --ultra-dark-blue: hsl(234, 17%, 12%);
+
   font-family: 'Red Hat Text', sans-serif;
   font-size: 10px;
 }
 
 body {
-  font-size: 16px
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('./assets/pattern-hills.svg'), url('./assets/bg-stars.svg');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: bottom 0 left -65rem, top 0 left 0;
+  background-color: #211d2b;
 }
 
 ////////////////////////////////////////////////////////////////////////
