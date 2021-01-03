@@ -2,22 +2,22 @@
   <div class="cardWrapper">
 
     <div class="card topCard">
-      <div class="cardNumber">{{(number + 1 | number: '2.0')}}</div>
+      <div class="cardNumber">{{(dialValue + 1 | number: '2.0')}}</div>
     </div>
     <div class="card bottomCard">
-      <div class="cardNumber">{{number | number: '2.0'}}</div>
+      <div class="cardNumber">{{dialValue | number: '2.0'}}</div>
     </div>
 
     <div class="card flipCard flipCardTop"
          [ngClass]="flipping ? 'flipping' : ''"
          #flipCard>
-      <div class="cardNumber">{{number | number: '2.0'}}</div>
+      <div class="cardNumber">{{dialValue | number: '2.0'}}</div>
     </div>
 
     <div class="card flipCard flipCardBottom"
          [ngClass]="flipping ? 'flipping' : ''"
          #flipCard>
-      <div class="cardNumber">{{number + 1 | number: '2.0'}}</div>
+      <div class="cardNumber">{{dialValue + 1 | number: '2.0'}}</div>
     </div>
 
 

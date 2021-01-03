@@ -14,7 +14,7 @@ import {
 })
 export class FlipDialComponent implements OnInit {
   @Input()
-  number!: number;
+  dialValue!: number;
   flipping = false;
 
   constructor() {}
@@ -29,7 +29,7 @@ export class FlipDialComponent implements OnInit {
     this.flipping = true;
 
     setTimeout(() => {
-      this.number++;
+      this.dialValue++;
       this.flipping = false;
     }, 600);
   }

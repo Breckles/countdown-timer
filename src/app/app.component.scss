@@ -1,38 +1,18 @@
 #appComponentContainer {
+  width: 100%;
+  height: 100%;
+}
+
+main {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
 
-#countdownWrapper {
-  // width: 100%;
+app-flip-timer {
+  display: block;
   width: min(100%, 720px);
   height: min(25vw, 170px);
   padding: 1rem 2.5rem;
-}
-
-#countdownWrapper::before,
-#countdownWrapper::after {
-  content: '';
-  flex: 1;
-}
-
-#flipDialWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-app-flip-dial {
-  display: block;
-  flex: 1 1 20vw;
-  height: 100%;
-  margin-right: 1.5rem;
-}
-
-app-flip-dial:last-child {
-  margin-right: 0;
 }

@@ -6,15 +6,9 @@ Minutes
 Seconds
 
 <div id="appComponentContainer">
-
-  <div id="countdownWrapper">
-    <div id="flipDialWrapper">
-      <app-flip-dial [number]='08'></app-flip-dial>
-      <app-flip-dial [number]='23'></app-flip-dial>
-      <app-flip-dial [number]='55'></app-flip-dial>
-      <app-flip-dial [number]='41'></app-flip-dial>
-    </div>
-  </div>
+  <main>
+    <app-flip-timer [dialValues]="dialValues"></app-flip-timer>
+  </main>
 </div>
 
 
