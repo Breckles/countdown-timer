@@ -26,7 +26,7 @@ body {
   height: 100%;
 
   background-image: url('./assets/pattern-hills.svg'), url('./assets/bg-stars.svg');
-  background-size: max(1000px, 100vw) 30vh, cover;
+  background-size: max(1000px, 100vw), cover;
   background-repeat: no-repeat;
   background-position: bottom 0 right 0, top 0 left 40%;
   background-color: #211d2b;
