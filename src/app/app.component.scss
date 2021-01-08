@@ -1,18 +1,59 @@
 #appComponentContainer {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
 main {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 20vh 0 8vh;
+    padding: 0 1vh;
+    width: min(100%, 420px);
+    text-align: center;
+    color: var(--white);
+    font-size: 1.9rem;
+    letter-spacing: 6px;
+  }
+
+  app-flip-clock {
+    display: block;
+    width: min(100%, 720px);
+    height: min(23vw, 170px);
+    padding: 0rem 1.5rem;
+  }
 }
 
-app-flip-timer {
-  display: block;
-  width: min(100%, 720px);
-  height: min(25vw, 170px);
-  padding: 1rem 2.5rem;
+footer {
+  position: absolute;
+  bottom: 6vh;
+  width: 100%;
+
+  ul#socialMediaIconsList {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    list-style-type: none;
+
+    li {
+      margin-right: 30px;
+
+      svg.socialMediaIcon:hover {
+        path {
+          fill: var(--soft-red);
+        }
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+
+  }
 }

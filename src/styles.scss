@@ -19,15 +19,15 @@ html {
 }
 
 body {
-  font-size: 16px;
   width: 100vw;
   height: 100vh;
 
   background-image: url('./assets/pattern-hills.svg'), url('./assets/bg-stars.svg');
-  background-size: 300%;
+  background-size: max(1000px, 100vw) 30vh, cover;
   background-repeat: no-repeat;
-  background-position: bottom 0 left -65rem, top 0 left 0;
+  background-position: bottom right, top 0 left 40%;
   background-color: #211d2b;
+  font-size: 16px;
 }
 
 ////////////////////////////////////////////////////////////////////////

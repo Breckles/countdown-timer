@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DialValues } from './flip-timer/flip-timer.component';
+import { ClockModes } from './flip-timer/flip-clock.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,11 @@ import { DialValues } from './flip-timer/flip-timer.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  dialValues: DialValues = { days: 8, hours: 23, minutes: 55, seconds: 41 };
+  // alertTime = new Date(Date.now() + 100000);
+  alertTime = new Date(Date.now() + 1000 * 60 * 60 * 24 + 1000);
+  clockMode = ClockModes.countdown;
+
+  alert(): void {
+    console.log('Clock Stopped!');
+  }
 }

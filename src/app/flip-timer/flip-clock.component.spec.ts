@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FlipTimerComponent } from './flip-timer.component';
+import { FlipClockComponent } from './flip-clock.component';
 
 describe('FlipTimerComponent', () => {
-  let component: FlipTimerComponent;
-  let fixture: ComponentFixture<FlipTimerComponent>;
+  let component: FlipClockComponent;
+  let fixture: ComponentFixture<FlipClockComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FlipTimerComponent ]
-    })
-    .compileComponents();
+      declarations: [FlipClockComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FlipTimerComponent);
+    fixture = TestBed.createComponent(FlipClockComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

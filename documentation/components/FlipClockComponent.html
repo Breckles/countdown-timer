@@ -1,0 +1,1324 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>countdown-timer documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">countdown-timer documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>FlipClockComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/flip-timer/flip-clock.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>A flip clock component that can act as a traditional timer, a countdown timer, and a regular clock.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-flip-clock</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./flip-clock.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./flip-clock.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#alertTimeInMs">alertTimeInMs</a>
+                            </li>
+                            <li>
+                                <a href="#daysDial">daysDial</a>
+                            </li>
+                            <li>
+                                <a href="#dialsInitialValues">dialsInitialValues</a>
+                            </li>
+                            <li>
+                                <a href="#hoursDial">hoursDial</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#intervalId">intervalId</a>
+                            </li>
+                            <li>
+                                <a href="#minutesDial">minutesDial</a>
+                            </li>
+                            <li>
+                                <a href="#secondsDial">secondsDial</a>
+                            </li>
+                            <li>
+                                <a href="#textSizeRatio">textSizeRatio</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#stopClockIfNecessary">stopClockIfNecessary</a>
+                            </li>
+                            <li>
+                                <a href="#tickDays">tickDays</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#tickDown">tickDown</a>
+                            </li>
+                            <li>
+                                <a href="#tickHours">tickHours</a>
+                            </li>
+                            <li>
+                                <a href="#tickMinutes">tickMinutes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#tickUp">tickUp</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#alertTime">alertTime</a>
+                            </li>
+                            <li>
+                                <a href="#clockMode">clockMode</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#emitClockAlert">emitClockAlert</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="alertTime"></a>
+                        <b>alertTime</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:56</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>A date object representing the future moment in time when the clock should emit an
+alert. Defaults to one hour in the future</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clockMode"></a>
+                        <b>clockMode</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#ClockModes" target="_self" >ClockModes</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:48</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>A string representing the mode in which the clock should operate.</p>
+<p>Options are:</p>
+<p>  &#39;clock&#39;: A regular clock set to the current time. Does not emit alerts.
+  &#39;timer&#39;: A timer that starts at 0 and counts up. An alert is emitted when
+           the alertTime is reached.
+  &#39;countdown&#39;: A countdown timer that displays the
+               time remaining until alertTime and counts down. Emits an alarm when the
+               clock reaches 0.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="emitClockAlert"></a>
+                        <b>emitClockAlert</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:62</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Generates an event that can be listened to by the parent component.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopClockIfNecessary"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            stopClockIfNecessary
+                        </b>
+                        <a href="#stopClockIfNecessary"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>stopClockIfNecessary()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tickDays"></a>
+                    <span class="name">
+                        <b>
+                            tickDays
+                        </b>
+                        <a href="#tickDays"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tickDays()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tickDown"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            tickDown
+                        </b>
+                        <a href="#tickDown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>tickDown()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tickHours"></a>
+                    <span class="name">
+                        <b>
+                            tickHours
+                        </b>
+                        <a href="#tickHours"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tickHours()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tickMinutes"></a>
+                    <span class="name">
+                        <b>
+                            tickMinutes
+                        </b>
+                        <a href="#tickMinutes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tickMinutes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tickUp"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            tickUp
+                        </b>
+                        <a href="#tickUp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>tickUp()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="alertTimeInMs"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            alertTimeInMs</b>
+                            <a href="#alertTimeInMs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:75</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="daysDial"></a>
+                        <span class="name">
+                            <b>
+                            daysDial</b>
+                            <a href="#daysDial"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/FlipDialComponent.html" target="_self" >FlipDialComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;daysDial&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:71</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialsInitialValues"></a>
+                        <span class="name">
+                            <b>
+                            dialsInitialValues</b>
+                            <a href="#dialsInitialValues"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/DialsInitialValues.html" target="_self" >DialsInitialValues</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:73</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hoursDial"></a>
+                        <span class="name">
+                            <b>
+                            hoursDial</b>
+                            <a href="#hoursDial"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/FlipDialComponent.html" target="_self" >FlipDialComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;hoursDial&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="intervalId"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            intervalId</b>
+                            <a href="#intervalId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="minutesDial"></a>
+                        <span class="name">
+                            <b>
+                            minutesDial</b>
+                            <a href="#minutesDial"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/FlipDialComponent.html" target="_self" >FlipDialComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;minutesDial&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="secondsDial"></a>
+                        <span class="name">
+                            <b>
+                            secondsDial</b>
+                            <a href="#secondsDial"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/FlipDialComponent.html" target="_self" >FlipDialComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;secondsDial&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:65</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="textSizeRatio"></a>
+                        <span class="name">
+                            <b>
+                            textSizeRatio</b>
+                            <a href="#textSizeRatio"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0.1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/flip-timer/flip-clock.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from &#x27;@angular/core&#x27;;
+import { FlipDialComponent } from &#x27;./flip-dial/flip-dial.component&#x27;;
+
+export interface DialsInitialValues {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
+export enum ClockModes {
+  clock &#x3D; &#x27;clock&#x27;,
+  timer &#x3D; &#x27;timer&#x27;,
+  countdown &#x3D; &#x27;countdown&#x27;,
+}
+
+/**
+ * A flip clock component that can act as a traditional timer, a countdown timer, and a regular clock.
+ */
+@Component({
+  selector: &#x27;app-flip-clock&#x27;,
+  templateUrl: &#x27;./flip-clock.component.html&#x27;,
+  styleUrls: [&#x27;./flip-clock.component.scss&#x27;],
+})
+export class FlipClockComponent implements OnInit, AfterViewInit {
+  /**
+   * A string representing the mode in which the clock should operate.
+   *
+   * Options are:
+   *
+   *  &#x27;clock&#x27;: A regular clock set to the current time. Does not emit alerts.
+   *  &#x27;timer&#x27;: A timer that starts at 0 and counts up. An alert is emitted when
+   *           the alertTime is reached.
+   *  &#x27;countdown&#x27;: A countdown timer that displays the
+   *               time remaining until alertTime and counts down. Emits an alarm when the
+   *               clock reaches 0.
+   *@member {ClockModes} [clockMode&#x3D;&#x27;clock&#x27;]
+   */
+  @Input()
+  clockMode!: ClockModes;
+
+  /**
+   * A date object representing the future moment in time when the clock should emit an
+   * alert. Defaults to one hour in the future
+   * @member {Date} [alertTime&#x3D;new Date(Date.now() + 1000*60*60)]
+   */
+  @Input()
+  alertTime!: Date;
+
+  /**
+   * Generates an event that can be listened to by the parent component.
+   */
+  @Output()
+  emitClockAlert &#x3D; new EventEmitter&lt;null&gt;();
+
+  @ViewChild(&#x27;secondsDial&#x27;)
+  secondsDial!: FlipDialComponent;
+  @ViewChild(&#x27;minutesDial&#x27;)
+  minutesDial!: FlipDialComponent;
+  @ViewChild(&#x27;hoursDial&#x27;)
+  hoursDial!: FlipDialComponent;
+  @ViewChild(&#x27;daysDial&#x27;)
+  daysDial!: FlipDialComponent;
+
+  dialsInitialValues!: DialsInitialValues;
+
+  private alertTimeInMs!: number;
+  private intervalId!: number;
+
+  textSizeRatio &#x3D; 0.1;
+
+  constructor() {}
+
+  ngOnInit(): void {
+    let days &#x3D; 0;
+    let hours &#x3D; 0;
+    let minutes &#x3D; 0;
+    let seconds &#x3D; 0;
+
+    if (!this.clockMode) {
+      this.clockMode &#x3D; ClockModes.clock;
+    }
+    if (!this.alertTime || this.alertTime.getTime() - Date.now() &lt; 0) {
+      this.alertTime &#x3D; new Date(Date.now() + 1000 * 60 * 60);
+    }
+
+    if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.clock) {
+      this.alertTimeInMs &#x3D; 8640000000000000;
+      const currentDate &#x3D; new Date();
+      days &#x3D; 0;
+      hours &#x3D; currentDate.getHours();
+      minutes &#x3D; currentDate.getMinutes();
+      seconds &#x3D; currentDate.getSeconds();
+    } else if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.timer) {
+      this.alertTimeInMs &#x3D; this.alertTime.getTime();
+    } else if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.countdown) {
+      this.alertTimeInMs &#x3D; this.alertTime.getTime();
+      let remainingTime &#x3D; this.alertTimeInMs - Date.now();
+      days &#x3D; Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+      remainingTime &#x3D; remainingTime % (1000 * 60 * 60 * 24);
+      hours &#x3D; Math.floor(remainingTime / (1000 * 60 * 60));
+      remainingTime &#x3D; remainingTime % (1000 * 60 * 60);
+      minutes &#x3D; Math.floor(remainingTime / (1000 * 60));
+      remainingTime &#x3D; remainingTime % (1000 * 60);
+      seconds &#x3D; Math.floor(remainingTime / 1000);
+    }
+
+    this.dialsInitialValues &#x3D; {
+      days: days,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds,
+    };
+  }
+
+  ngAfterViewInit(): void {
+    if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.countdown) {
+      this.intervalId &#x3D; +setInterval(() &#x3D;&gt; this.tickDown(), 1000);
+    } else {
+      this.intervalId &#x3D; +setInterval(() &#x3D;&gt; this.tickUp(), 1000);
+    }
+  }
+
+  private tickUp() {
+    this.secondsDial.tickUp();
+    this.stopClockIfNecessary();
+  }
+
+  private tickDown() {
+    this.secondsDial.tickDown();
+    this.stopClockIfNecessary();
+  }
+
+  private stopClockIfNecessary() {
+    if (Date.now() &gt; this.alertTimeInMs - 1000) {
+      clearInterval(this.intervalId);
+      this.emitClockAlert.emit();
+    }
+  }
+
+  tickMinutes() {
+    setTimeout(() &#x3D;&gt; {
+      if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.countdown) {
+        this.minutesDial.tickDown();
+      } else {
+        this.minutesDial.tickUp();
+      }
+    }, 200);
+  }
+
+  tickHours() {
+    setTimeout(() &#x3D;&gt; {
+      if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.countdown) {
+        this.hoursDial.tickDown();
+      } else {
+        this.hoursDial.tickUp();
+      }
+    }, 200);
+  }
+
+  tickDays() {
+    setTimeout(() &#x3D;&gt; {
+      if (this.clockMode &#x3D;&#x3D;&#x3D; ClockModes.countdown) {
+        this.daysDial.tickDown();
+      } else {
+        this.daysDial.tickUp();
+      }
+    }, 200);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;flipTimerContainer&quot;&gt;
+  &lt;ol id&#x3D;&quot;flipDialList&quot;&gt;
+    &lt;li&gt;
+      &lt;app-flip-dial [dialValue]&#x3D;&#x27;dialsInitialValues.days&#x27;
+                     [dialMaxValue]&#x3D;&quot;99&quot;
+                     #daysDial&gt;&lt;/app-flip-dial&gt;
+      &lt;h2 [appTextFitsContainer]&#x3D;&quot;textSizeRatio&quot;&gt;DAYS&lt;/h2&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;app-flip-dial [dialValue]&#x3D;&#x27;dialsInitialValues.hours&#x27;
+                     [dialMaxValue]&#x3D;&quot;23&quot;
+                     (dialReset)&#x3D;&quot;tickDays()&quot;
+                     #hoursDial&gt;&lt;/app-flip-dial&gt;
+      &lt;h2 [appTextFitsContainer]&#x3D;&quot;textSizeRatio&quot;&gt;HOURS&lt;/h2&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;app-flip-dial [dialValue]&#x3D;&#x27;dialsInitialValues.minutes&#x27;
+                     [dialMaxValue]&#x3D;&quot;59&quot;
+                     (dialReset)&#x3D;&quot;tickHours()&quot;
+                     #minutesDial&gt;&lt;/app-flip-dial&gt;
+      &lt;h2 [appTextFitsContainer]&#x3D;&quot;textSizeRatio&quot;&gt;MINUTES&lt;/h2&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;app-flip-dial [dialValue]&#x3D;&#x27;dialsInitialValues.seconds&#x27;
+                     [dialMaxValue]&#x3D;&quot;59&quot;
+                     (dialReset)&#x3D;&quot;tickMinutes()&quot;
+                     #secondsDial&gt;&lt;/app-flip-dial&gt;
+      &lt;h2 [appTextFitsContainer]&#x3D;&quot;textSizeRatio&quot;&gt;SECONDS&lt;/h2&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./flip-clock.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.flipTimerContainer {
+  width: 100%;
+  height: 100%;
+}
+
+ol#flipDialList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  list-style-type: none;
+
+  li {
+    flex-shrink: 0;
+    width: 20%;
+    height: 100%;
+    margin-right: 5%;
+
+    app-flip-dial {
+      display: block;
+      width: 100%;
+      height: 80%;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 20%;
+      color: var(--grayish-blue);
+      letter-spacing: 3px;
+    }
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+
+
+
+button {
+  display: block;
+  margin-top: 3rem;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="flipTimerContainer">  <ol id="flipDialList">    <li>      <app-flip-dial [dialValue]=\'dialsInitialValues.days\'                     [dialMaxValue]="99"                     #daysDial></app-flip-dial>      <h2 [appTextFitsContainer]="textSizeRatio">DAYS</h2>    </li>    <li>      <app-flip-dial [dialValue]=\'dialsInitialValues.hours\'                     [dialMaxValue]="23"                     (dialReset)="tickDays()"                     #hoursDial></app-flip-dial>      <h2 [appTextFitsContainer]="textSizeRatio">HOURS</h2>    </li>    <li>      <app-flip-dial [dialValue]=\'dialsInitialValues.minutes\'                     [dialMaxValue]="59"                     (dialReset)="tickHours()"                     #minutesDial></app-flip-dial>      <h2 [appTextFitsContainer]="textSizeRatio">MINUTES</h2>    </li>    <li>      <app-flip-dial [dialValue]=\'dialsInitialValues.seconds\'                     [dialMaxValue]="59"                     (dialReset)="tickMinutes()"                     #secondsDial></app-flip-dial>      <h2 [appTextFitsContainer]="textSizeRatio">SECONDS</h2>    </li>  </ol></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FlipClockComponent', 'selector': 'app-flip-clock'},{'name': 'FlipDialComponent', 'selector': 'app-flip-dial'}];
+    var DIRECTIVES = [{'name': 'EvenWidthDirective', 'selector': '[appEvenWidth]'},{'name': 'HeightDivisibleByFourDirective', 'selector': '[appHeightDivisibleByFour]'},{'name': 'TextFitsContainerDirective', 'selector': '[appTextFitsContainer]'}];
+    var ACTUAL_COMPONENT = {'name': 'FlipClockComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FlipClockComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

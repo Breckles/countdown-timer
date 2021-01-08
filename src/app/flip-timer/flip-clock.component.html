@@ -1,0 +1,31 @@
+<div class="flipTimerContainer">
+  <ol id="flipDialList">
+    <li>
+      <app-flip-dial [dialValue]='dialsInitialValues.days'
+                     [dialMaxValue]="99"
+                     #daysDial></app-flip-dial>
+      <h2 [appTextFitsContainer]="textSizeRatio">DAYS</h2>
+    </li>
+    <li>
+      <app-flip-dial [dialValue]='dialsInitialValues.hours'
+                     [dialMaxValue]="23"
+                     (dialReset)="tickDays()"
+                     #hoursDial></app-flip-dial>
+      <h2 [appTextFitsContainer]="textSizeRatio">HOURS</h2>
+    </li>
+    <li>
+      <app-flip-dial [dialValue]='dialsInitialValues.minutes'
+                     [dialMaxValue]="59"
+                     (dialReset)="tickHours()"
+                     #minutesDial></app-flip-dial>
+      <h2 [appTextFitsContainer]="textSizeRatio">MINUTES</h2>
+    </li>
+    <li>
+      <app-flip-dial [dialValue]='dialsInitialValues.seconds'
+                     [dialMaxValue]="59"
+                     (dialReset)="tickMinutes()"
+                     #secondsDial></app-flip-dial>
+      <h2 [appTextFitsContainer]="textSizeRatio">SECONDS</h2>
+    </li>
+  </ol>
+</div>
