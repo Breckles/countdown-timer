@@ -55,13 +55,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' : 'data-target="#xs-components-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' }>
+                                            'data-target="#components-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' : 'data-target="#xs-components-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' :
-                                            'id="xs-components-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' :
+                                            'id="xs-components-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' }>
                                             <li class="link">
                                                 <a href="components/AppComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -78,13 +78,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                        'data-target="#directives-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' : 'data-target="#xs-directives-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' }>
+                                        'data-target="#directives-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' : 'data-target="#xs-directives-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' }>
                                         <span class="icon ion-md-code-working"></span>
                                         <span>Directives</span>
                                         <span class="icon ion-ios-arrow-down"></span>
                                     </div>
-                                    <ul class="links collapse" ${ isNormalMode ? 'id="directives-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' :
-                                        'id="xs-directives-links-module-AppModule-f6ed53b0c6b0535d05d89677b41781d9"' }>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="directives-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' :
+                                        'id="xs-directives-links-module-AppModule-a4d6565278ee0684509072712e4afd9b"' }>
                                         <li class="link">
                                             <a href="directives/EvenWidthDirective.html"
                                                 data-type="entity-link" data-context="sub-entity" data-context-id="modules">EvenWidthDirective</a>

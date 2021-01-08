@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ClockModes } from './flip-timer/flip-clock.component';
+import { ClockModes } from './flip-clock/flip-clock.component';
 
 @Component({
   selector: 'app-root',

@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "typedoc": "typedoc src/main.ts"
+    "typedoc": "typedoc src/main.ts",
+    "http-server": "http-server ./dist/countdown-timer"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "http-server": "^0.12.3",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.1.0",
