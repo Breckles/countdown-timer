@@ -15,7 +15,7 @@ html {
   --ultra-dark-blue: hsl(234, 17%, 12%);
 
   width: 100%;
-  height: 100%;
+  height: max(300px, 100%);
 
   font-family: 'Red Hat Text', sans-serif;
   font-size: 10px;
